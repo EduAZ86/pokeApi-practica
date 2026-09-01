@@ -13,8 +13,106 @@ html,body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color:gray;
 }
 
 .contenedor-principal{
+    width: 600px;
+    min-height: 100vh;
+    background-color: rgb(255, 51, 52);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    border: 5px solid black;
+}
+
+.contenedor-lista{
+    font-family: "Courier New", Courier, monospace;
+    text-transform: uppercase; 
+    font-weight: bold;
+    width: 90px;
+    height: 420px;
+    align-items: center;
+    justify-content: center;
+    border: 4px double black;
+}
+
+.contenedor-pantalla{
+    font-family: "Courier New", Courier, monospace;
+    text-transform: uppercase; 
+    font-weight: bold;
+    width: 500px;
+    height: 500px;
+    background-color:white;
+    justify-content: left;
+    align-self: center;
     display: flex;
     flex-direction: row;
+    border: 3px solid black;
+}
+
+.contenedor-botones{
+    width:500px;
+    height: 150px;
+    background-color: gray;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    border: 2px solid black;
+}
+
+.visor-top{
+    width: 450px;
+    height: 30px;
+    background-color: rgb(141, 199, 63);
+    border-radius: 5%;
+    border: 2px solid black;
+
+}
+
+.menu{
+    width: 400px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-a{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(70,70,70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.visor-bot{
+    width: 400px;
+    height: 80px;
+    margin-top: 20px;
+    background-color: rgb(141, 199, 63);
+    border-radius: 5%;
+    border: 2px solid black;
+}
+
+.menu-b{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(70,70,70);
+}
+
+.contenedor-imagen img {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 5%;
+    border: 4px double black;
+}
+.contenedor-imagen{
+    padding-left: 30px;
+}

@@ -1,24 +1,31 @@
 import { useState, useEffect } from 'react';
 import { getPokemonList } from '../services/pokeapi';
+import PokeCard from './PokeCard';
 
-function PokemonList() {
+const LIMIT=20;
+
+function PokemonList({page, onSelectPokemon}) {
   const [pokemon, setPokemon] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function load() {
-      const data = await getPokemonList(20, 0);
+      const offset = page* LIMIT;
+      const data = await getPokemonList(LIMIT, offset);
       setPokemon(data.results);
       setLoading(false);
     }
     load();
-  }, []);
+  }, [page]);
 
   if (loading) return <div>Cargando...</div>;
   return (
     <div>
       {pokemon.map(p => (
-        <div key={p.name}>{p.name}</div>
+        <PokeCard
+         key={p.name}
+         name={p.name}
+         onSelect={onSelectPokemon} />
       ))}
     </div>
   );
