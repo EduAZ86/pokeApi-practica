@@ -33,51 +33,55 @@ html,body{
     font-family: "Courier New", Courier, monospace;
     text-transform: uppercase; 
     font-weight: bold;
-    width: 90px;
-    height: 420px;
+    width: 100px;
+    height: 480px;
     align-items: center;
     justify-content: center;
-    border: 4px double black;
+    border: 4px double white;
 }
 
 .contenedor-pantalla{
     font-family: "Courier New", Courier, monospace;
     text-transform: uppercase; 
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: small;
     width: 500px;
     height: 500px;
-    background-color:white;
+    color: white;
+    background-color:black;
     justify-content: left;
     align-self: center;
     display: flex;
     flex-direction: row;
-    border: 3px solid black;
+    border: 5px solid grey;
 }
 
 .contenedor-botones{
     width:500px;
     height: 150px;
-    background-color: gray;
-    margin-top: 20px;
+    background-color: rgb(99, 99, 99);
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5%;
-    border: 2px solid black;
+    border-radius: 25px 25px 25px 25px; 
+    border: 5px solid black;
 }
 
 .visor-top{
+    margin-top: -25px;
     width: 450px;
     height: 30px;
-    background-color: rgb(141, 199, 63);
-    border-radius: 5%;
-    border: 2px solid black;
+    color: black;
+    background-color: rgb(141, 199, 33);
+    border-radius: 25px 25px 25px 25px; 
+    border: 3px solid black;
 
 }
 
 .menu{
-    width: 400px;
+    width: 450px;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -86,33 +90,86 @@ html,body{
 
 .menu-a{
     width: 120px;
-    height: 50px;
-    background-color: rgb(70,70,70);
+    height: 60px;
+    background-color: rgb(99, 99, 99);
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
 .visor-bot{
     width: 400px;
-    height: 80px;
-    margin-top: 20px;
-    background-color: rgb(141, 199, 63);
+    height: 90px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    align-items: center;
+    background-color: rgb(141, 199, 33);
     border-radius: 5%;
     border: 2px solid black;
 }
 
 .menu-b{
+    margin-top: 30px;
     width: 120px;
-    height: 50px;
-    background-color: rgb(70,70,70);
+    height: 70px;
+    background-color: rgb(99, 99, 99);
+    display: flex;
+    flex-direction: column;
 }
 
 .contenedor-imagen img {
     width: 250px;
     max-width: 100%;
     border-radius: 5%;
-    border: 4px double black;
+    border: 4px double white;
 }
 .contenedor-imagen{
     padding-left: 30px;
+}
+
+.luz-pokedex {
+  position: relative;
+  top: 0px;
+  right: 265px;
+  width: 50px;   
+  height: 50px;    
+  background-color: #00bfff; 
+  border-radius: 50%;         
+  border: 3px solid white;  
+  box-shadow: 0 0 15px #00bfff;
+}
+
+/* La animación del parpadeo */
+@keyframes parpadeo {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 15px #00bfff;
+  }
+  50% {
+    opacity: 0.4;
+    box-shadow: 0 0 2px #00bfff;
+  }
+}
+
+.usuario{
+  width: 150px;
+  height:25px;
+  background-color: rgb(141, 199, 33);
+}
+.usuario::placeholder{
+    color:white;
+}
+
+.password{
+  width: 150px;
+  height:25px;
+  background-color:rgb(141, 199, 63);
+}
+
+.password::placeholder{
+    color:white;
 }

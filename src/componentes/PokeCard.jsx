@@ -9,7 +9,7 @@ function PokeCard({ name, onSelect }) {
 
     return (
         <div className="contenedor-pokecard">
-            <button onClick={() => onSelect(name)}>
+            <button style={{width:'90px', backgroundColor:'black', color:'white'}} onClick={() => onSelect(name)}>
     {name}
 </button>
             

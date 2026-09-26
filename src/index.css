@@ -13,3 +13,11 @@ body {
 #root {
   min-height: 100vh;
 }
+
+.usuario{
+  width: 150px;
+}
+
+.password{
+  width: 150px;
+}
